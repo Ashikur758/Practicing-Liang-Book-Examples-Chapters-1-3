@@ -1,2 +1,37 @@
-# Practicing-Liang-Book-Examples-Chapters-1-3
-Students will practice programming exercises from Chapters 1 to 3 of Liang’s book. These exercises cover basic concepts such as input/output, variables, data types, operators, control statements, and simple problem-solving. Attendance and marks will be awarded to students who submit the completed exercises.
+import java.util.Scanner;
+
+public class LiangPractice {
+
+    public static void main(String[] args) {
+
+        // Chapter 1: Output
+        System.out.println("Welcome to Java Programming");
+        System.out.println("----------------------------");
+
+        // Chapter 2: Input, Variables, Operators
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter your marks: ");
+        int marks = sc.nextInt();
+
+        // Chapter 3: Decision Making
+        System.out.println("\nStudent Name: " + name);
+
+        if (marks >= 80) {
+            System.out.println("Grade: A+");
+        } else if (marks >= 70) {
+            System.out.println("Grade: A");
+        } else if (marks >= 60) {
+            System.out.println("Grade: A-");
+        } else if (marks >= 50) {
+            System.out.println("Grade: B");
+        } else {
+            System.out.println("Grade: Fail");
+        }
+
+        sc.close();
+    }
+}
